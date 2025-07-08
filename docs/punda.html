@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Project - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Your Project</h1>
+                </div>
+                
+                <div class="nav-menu">
+                    <div class="dropdown">
+                        <button class="dropdown-btn" onclick="toggleDropdown()">
+                            Menu ▼
+                        </button>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <a href="index.html">Home</a>
+                            <a href="report.html">Report</a>
+                            <a href="about.html">About</a>
+                            <a href="collaborators.html">Collaborators</a>
+                            <a href="sponsors.html">Sponsors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Your Project</h1>
+                <p>A professional presentation of our research and collaborative efforts</p>
+                <div class="hero-buttons">
+                    <a href="report.html" class="btn primary">View Report</a>
+                    <a href="about.html" class="btn secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>Research Report</h3>
+                        <p>Comprehensive findings and analysis from our extensive research project.</p>
+                        <a href="report.html">Read More →</a>
+                    </div>
+                    <div class="overview-card">
+                        <h3>About the Project</h3>
+                        <p>Learn about the background, objectives, and methodology behind this work.</p>
+                        <a href="about.html">Learn More →</a>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Our Team</h3>
+                        <p>Meet the dedicated researchers and collaborators who made this possible.</p>
+                        <a href="collaborators.html">Meet Team →</a>
+                    </div>
+                    <div class="overview-card">
+                        <h3>Partners & Sponsors</h3>
+                        <p>Discover the organizations that supported and enabled this research.</p>
+                        <a href="sponsors.html">View Partners →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
