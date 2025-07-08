@@ -260,3 +260,13 @@ footer {
         padding: 2rem 0;
     }
 }
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #3498db;
+    z-index: 1001;
+    transition: width 0.3s ease;
+}
