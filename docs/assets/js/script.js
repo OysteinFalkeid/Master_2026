@@ -70,3 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
     fadeInOnScroll();
     window.addEventListener('scroll', fadeInOnScroll);
 });
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    document.getElementById('progressBar').style.width = scrollPercent + '%';
+});
