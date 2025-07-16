@@ -7,6 +7,8 @@
     --card-bg: #ffffff;
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
+    --master-color: #00705D;
+    --master-color-highlight: #308679;
 }
 
 
@@ -77,7 +79,7 @@ header {
 }
 
 .dropdown-btn {
-    background: #3498db;
+    background: var(--master-color);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -89,7 +91,7 @@ header {
 }
 
 .dropdown-btn:hover {
-    background: #2980b9;
+    background: var(--master-color-highlight);
 }
 
 .dropdown-content {
@@ -127,7 +129,7 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3498db, #2c3e50);
+    background: linear-gradient(139deg, var(--master-color), var(--master-color-highlight));
     color: white;
     padding: 4rem 0;
     text-align: center;
@@ -162,12 +164,12 @@ main {
 }
 
 .btn.primary {
-    background: #e74c3c;
+    background: var(--master-color);
     color: white;
 }
 
 .btn.primary:hover {
-    background: #c0392b;
+    background: var(--master-color-highlight);
     transform: translateY(-2px);
 }
 
@@ -227,19 +229,19 @@ main {
 }
 
 .overview-card a {
-    color: #3498db;
+    color: var(--master-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .overview-card a:hover {
-    color: #2980b9;
+    color: var(--master-color-highlight);
 }
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: var(--master-color);
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -289,7 +291,7 @@ footer {
     top: 0;
     left: 0;
     height: 3px;
-    background: #3498db;
+    background: var(--master-color);
     z-index: 1001;
     transition: width 0.3s ease;
 }
