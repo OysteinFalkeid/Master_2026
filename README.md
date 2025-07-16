@@ -9,7 +9,7 @@ It contains HTML, CSS, and JavaScript in a clean directory structure.
 
 ## 🔗 Live Site
 
-[Visit the site here](https://<your-username>.github.io/<repo-name>/)
+[Visit the site here](https://oysteinfalkeid.github.io/Master_2026/)
 
 ## 📁 Structure
 
