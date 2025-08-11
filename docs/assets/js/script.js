@@ -77,3 +77,21 @@ window.addEventListener('scroll', function() {
     const scrollPercent = (scrollTop / docHeight) * 100;
     document.getElementById('progressBar').style.width = scrollPercent + '%';
 });
+
+
+function loadHTML(id, file) {
+  fetch(file)
+    .then(response => {
+      if (!response.ok) throw new Error(`Failed to load ${file}`);
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    })
+    .catch(err => console.error(err));
+}
+
+// Load the header and footer
+loadHTML("head", "assets/head.html");
+loadHTML("header", "assets/header.html");
+loadHTML("footer", "assets/footer.html");
