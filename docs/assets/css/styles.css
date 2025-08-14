@@ -299,3 +299,9 @@ footer {
     z-index: 1001;
     transition: width 0.3s ease;
 }
+
+
+.error-page {
+    text-align: center;
+    margin: auto;
+}
