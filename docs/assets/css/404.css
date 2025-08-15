@@ -1,0 +1,14 @@
+.error-page {
+    height: 100vh;
+    display: flex;              /* enable flexbox */
+    justify-content: center;    /* horizontal center */
+    align-items: center;        /* vertical center */
+}
+
+.error-page-content {
+    text-align: center;
+}
+
+/* h1{
+    margin-top: 50px;
+} */

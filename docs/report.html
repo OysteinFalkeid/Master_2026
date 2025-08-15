@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master ØF</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/report.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -28,16 +29,47 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Master Thesis">
+    <meta name="twitter:title" content="Master Thesis by Øysteion Falkeid">
     <meta name="twitter:description" content="Autonomus driving of the punda wheel">
-    <meta name="twitter:image" content="images/project-preview.jpg">
+    <meta name="twitter:image" content="https://oysteinfalkeid.github.io/Master_2026/assets/images/project-preview3.png">
     
 </head>
 <body>
     <div id="header"></div>
 
     <main>
-        <img src="assets/images/overview.png" alt="Overview of the project components">
+        <div class="container">
+            <h1>Comunication diagram</h1>
+            <p>Wireless comunication is key as it enables more fredome. This diagram shows how the 3 main parts of the system comunicates</p>
+            <ul>
+                <li>
+                    Development machine: 
+                    this computer is durable and can hangle large amounts of heavy calculations. 
+                    The machine will be used for SLAM, simulation, debugging and other diagnostic tasks.
+                </li>
+                <li>
+                    Raspberry pi: 
+                    This is a tiny computer (other small computers can be used). 
+                    The raspberry pi runs ROS and handles the main part of the ROS program. 
+                    The pi (Raspberry pi) can handle SLAM and autonomus driving.
+                </li>
+                <li>
+                    ESP32 WROOM32: 
+                    This is a 32 bit microcontroller and can be programed using C++. 
+                    The microcontroler has peripheral components capable of completing a large range of tasks. 
+                    This gives a good basis for early development, as the controller has hardware for almost every task and some capabilities for brute forcing other tasks using the cpu.
+                </li>
+            </ul>
+            <img src="assets/images/overview.png" alt="Overview of the project components">
+        </div>
+        <div class="container">
+            <h1>video of the Robot driving in Gazebo</h1>
+            <p>The robot can be controled using a gamepad keyboard or autonomusli wolowing a path based on a map.</p>
+            <video controls>
+                <source src="assets/images/first_test_simulation.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </main>
 
     <div id="footer"></div>
