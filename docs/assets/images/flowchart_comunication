@@ -1,0 +1,23 @@
+digraph Flowchart {
+	dpi=350
+	node [fontname=Calibri fontsize=24]
+	edge [fontname=Calibri fontsize=14]
+	Development_machine [label=Development_machine color="#00705D" fillcolor="#308679" margin="0.15,0.40" shape=cylinder style=filled]
+	cpu [label="Central Processing Unit, 
+Raspberry pi 5" color="#00705D" fillcolor="#308679" shape=box style="rounded,filled"]
+	imu [label="Inertial Measurement Unit" color="#00705D" fillcolor="#308679" shape=parallelogram style=filled]
+	gps [label="Global Positioning System" color="#00705D" fillcolor="#308679" shape=parallelogram style=filled]
+	gamepad [label="wireless controller" color="#00705D" fillcolor="#308679" shape=parallelogram style=filled]
+	wheel_1 [label="Punda wheel" color="#00705D" fillcolor="#308679" shape=parallelogram style=filled]
+	wheel_2 [label="Punda wheel" color="#00705D" fillcolor="#308679" shape=parallelogram style=filled]
+	lidar [label="Light Detection and Ranging" color="#00705D" fillcolor="#308679" shape=parallelogram style=filled]
+	cpu -> Development_machine [label="" color="#00705D"]
+	imu -> cpu [label="" color="#00705D"]
+	gps -> cpu [label="" color="#00705D"]
+	gamepad -> cpu [label="" color="#00705D"]
+	cpu -> wheel_1 [label="" color="#00705D"]
+	cpu -> wheel_2 [label="" color="#00705D"]
+	wheel_1 -> cpu [label="" color="#00705D"]
+	wheel_2 -> cpu [label="" color="#00705D"]
+	lidar -> cpu [label="" color="#00705D"]
+}
