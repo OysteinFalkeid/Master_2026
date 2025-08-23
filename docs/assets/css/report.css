@@ -1,0 +1,22 @@
+
+
+
+
+img {
+    max-width: 100vh;
+    max-height: 80vh;
+}
+
+/* .container {
+    border: 2px solid black;
+} */
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100vh;
+    max-height: 80vh;
+}

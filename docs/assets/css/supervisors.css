@@ -1,3 +1,16 @@
+
+.container h1 {
+    font-size: 40px;
+}
+
+.button {
+    margin: 12px auto;
+}
+
+.button a {
+    text-decoration: none;
+}
+
 .supervisor {
     background: var(--master-color);
     color: var(--bg-color);
@@ -13,4 +26,14 @@
 .supervisor:hover {
     background: var(--master-color-highlight);
     color: var(--text-color);
+}
+
+.container_supervisor {
+    max-width: 1200px;
+    margin: 25px 12px;
+    /* background: #b422226d; */
+    border-width: 0;
+    border-bottom: 3px;
+    border-color: var(--master-color);
+    border-style: solid;
 }

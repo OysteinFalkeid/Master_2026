@@ -17,31 +17,31 @@ window.onclick = function(event) {
     }
 }
 
-// Smooth scrolling for anchor links (if you add any internal links)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+// // Smooth scrolling for anchor links (if you add any internal links)
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         const target = document.querySelector(this.getAttribute('href'));
+//         if (target) {
+//             target.scrollIntoView({
+//                 behavior: 'smooth'
+//             });
+//         }
+//     });
+// });
 
-// Add active class to current page in dropdown
-document.addEventListener('DOMContentLoaded', function() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+// // Add active class to current page in dropdown
+// document.addEventListener('DOMContentLoaded', function() {
+//     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+//     const dropdownLinks = document.querySelectorAll('.dropdown-content a');
     
-    dropdownLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.style.backgroundColor = '#3498db';
-            link.style.color = 'white';
-        }
-    });
-});
+//     dropdownLinks.forEach(link => {
+//         if (link.getAttribute('href') === currentPage) {
+//             link.style.backgroundColor = '#3498db';
+//             link.style.color = 'white';
+//         }
+//     });
+// });
 
 // Simple fade-in animation for cards
 function fadeInOnScroll() {
@@ -71,12 +71,12 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', fadeInOnScroll);
 });
 
-window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset;
-    const docHeight = document.body.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    document.getElementById('progressBar').style.width = scrollPercent + '%';
-});
+// window.addEventListener('scroll', function() {
+//     const scrollTop = window.pageYOffset;
+//     const docHeight = document.body.scrollHeight - window.innerHeight;
+//     const scrollPercent = (scrollTop / docHeight) * 100;
+//     document.getElementById('progressBar').style.width = scrollPercent + '%';
+// });
 
 
 function loadHTML(id, file) {
@@ -92,6 +92,6 @@ function loadHTML(id, file) {
 }
 
 // Load the header and footer
-loadHTML("head", "assets/head.html");
+// loadHTML("head", "assets/head.html");
 loadHTML("header", "assets/header.html");
 loadHTML("footer", "assets/footer.html");
