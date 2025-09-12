@@ -6,10 +6,27 @@
     --accent-color: #ff8fa2;
     --shadow-color: #75434b;
     --text-color: #333;
+    --secoundary-text-color: #424242;
     --bg-color: #efede3;
     --card-bg: #ffffff;
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
+}
+
+:root.dark-mode {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+    
+    --accent-color: #ff8fa2; /* keeps vibrancy, works well on dark */
+    --shadow-color: #000000; /* deeper shadow for dark mode */
+    --text-color: #e6e6e6; /* soft white, not pure white */
+    --secoundary-text-color: rgb(152, 152, 152)1f0;
+    --bg-color: #121212; /* near-black, modern dark background */
+    --card-bg: #1e1e1e; /* slightly lighter for cards */
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.6); /* stronger shadow */
+    --border-radius: 8px; /* unchanged */
 }
 
 :root.dark-mode {
@@ -20,9 +37,102 @@
     --accent-color: #ff8fa2;
     --shadow-color: #75434b;
     --text-color: #DFD0B8;
+    --secoundary-text-color: rgb(152, 152, 152)1f0;
     --bg-color: #393E46;
     --card-bg: #222831;
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+:root.dark-mode {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+
+    --accent-color: #ff8fa2; /* still works nicely for contrast */
+    --shadow-color: #003d3b; /* deeper marine shadow */
+    --text-color: #e0f1f0; /* soft aqua-white text */
+    --secoundary-text-color: rgb(152, 152, 152)1f0;
+    --bg-color: #0f2d33; /* dark teal background */
+    --card-bg: #17444b; /* lighter teal for cards */
+    --shadow: 0 2px 10px rgba(0, 32, 32, 0.5);
+    --border-radius: 8px;
+}
+
+:root.dark-mode {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+
+    --accent-color: #ff8fa2; /* keeps its pop */
+    --shadow-color: #27403d; /* softer marine shadow */
+    --text-color: #e8eceb; /* off-white, less glare */
+    --bg-color: #1c2e2d; /* dark teal-gray, not pure black */
+    --card-bg: #263f3d; /* medium teal for contrast with bg */
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* softer than first scheme */
+    --border-radius: 8px;
+}
+:root.dark-mode {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+
+    --accent-color: #ff8fa2; /* still works as a lively highlight */
+    --shadow-color: #2a1e33; /* muted purple shadow */
+    --text-color: #e6e0f0; /* soft violet-white, not stark */
+    --bg-color: #1b1a24; /* deep slate purple background */
+    --card-bg: #262433; /* slightly lighter purple-gray for cards */
+    --shadow: 0 2px 10px rgba(20, 10, 30, 0.6);
+    --border-radius: 8px;
+}
+
+:root.dark-mode {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+
+    --accent-color: #ff8fa2; /* works well against gray */
+    --shadow-color: #0d1117; /* deeper gray shadow */
+    --text-color: #c9d1d9; /* GitHub uses soft gray text */
+    --bg-color: #0d1117; /* GitHub main background */
+    --card-bg: #161b22; /* GitHub "card" background */
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    --border-radius: 8px;
+}
+
+:root.dark-mode {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+
+    --accent-color: #ff8fa2; /* pops against the muted background */
+    --shadow-color: #1a1a1a; /* soft neutral shadow */
+    --text-color: #ececec; /* ChatGPT uses light gray, not white */
+    --secoundary-text-color: #ececec;
+    --bg-color: #202123; /* main ChatGPT dark background */
+    --card-bg: #2b2c2f; /* slightly lighter gray for containers */
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    --border-radius: 8px;
+}
+
+:root {
+    --master-color: #00705D; /* unchanged */
+    --master-color-highlight: #308679; /* unchanged */
+    --primary-color: var(--master-color);
+    --secondary-color: var(--master-color-highlight);
+
+    --accent-color: #ff8fa2; /* same accent as dark */
+    --shadow-color: #75434b; /* soft neutral shadow */
+    --text-color: #202123; /* near-black, not harsh */
+    --secoundary-text-color: #202123;
+    --bg-color: #f5f5f5; /* main background, soft gray (ChatGPT light) */
+    --card-bg: #ffffff; /* white cards on gray background */
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     --border-radius: 8px;
 }
 
@@ -266,7 +376,7 @@ main {
 }
 
 .overview-card p {
-    color: var(--text-color);
+    color: var(--secoundary-text-color);
     margin-bottom: 1.5rem;
     line-height: 1.7;
 }
