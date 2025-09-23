@@ -39,6 +39,29 @@
 
     <main>
         <div class="container">
+            <h1>Introduction</h1>
+            <p>
+                Agriculture has always been hard work. We as humans have outsourced more and 
+                more of the hardest tasks to others. Such as horses and tractors. 
+                The punda wheel is the hard working parts of a tractor, compressed inside one wheel.
+                But a wheel can not moove by itself, no mater how fast the engine spins. To give the 
+                punda wheel life I aim to create a differential drive robot, capable of handeling tasks 
+                sutable for a small tractor. 
+            </p>
+            <p>
+                To acomplish this task i will:
+            </p>
+            <ul class="list">
+                <li>Establich wierless comunication</li>
+                <li>Create hardware interface in ROS capable of handeling several wheels</li>
+                <li>create a virtual clone </li>
+                <li>expore diferent sensors and analyse the robots optimal setup.</li>
+            </ul>
+            <p>
+                To acomplish these task We will look at a weriaty of solutions and their pros and cons.
+            </p>
+        </div>
+        <div class="container">
             <h1>Comunication diagram</h1>
             <p>Wireless comunication is key as it enables more fredome. This diagram shows how the 3 main parts of the system comunicates</p>
             <ul>
@@ -46,22 +69,22 @@
                     Development machine: 
                     this computer is durable and can hangle large amounts of heavy calculations. 
                     The machine will be used for SLAM, simulation, debugging and other diagnostic tasks.
-                </li>
+                </li><br>
                 <li>
                     Raspberry pi: 
                     This is a tiny computer (other small computers can be used). 
                     The raspberry pi runs ROS and handles the main part of the ROS program. 
                     The pi (Raspberry pi) can handle SLAM and autonomus driving.
-                </li>
+                </li><br>
                 <li>
                     ESP32 WROOM32: 
                     This is a 32 bit microcontroller and can be programed using C++. 
                     The microcontroler has peripheral components capable of completing a large range of tasks. 
                     This gives a good basis for early development, as the controller has hardware for almost every task and some capabilities for brute forcing other tasks using the cpu.
-                </li>
+                </li><br>
             </ul>
             <img src="assets/images/flowchart_comunication.webp" alt="Overview of the project components">
-        </div>
+        </div><br>
         <div class="container">
             <h1>video of the Robot driving in Gazebo</h1>
             <p>The robot can be controled using a gamepad keyboard or autonomusli folowing a path based on a map.</p>
@@ -71,8 +94,7 @@
             </video>
         </div>        
         <div class="container">
-            <!-- <h1>video of the Robot driving in Gazebo</h1>
-            <p>The robot can be controled using a gamepad keyboard or autonomusli wolowing a path based on a map.</p> -->
+            <p>The hitbokses of the robot are made of simple poligons. the visible model for rendering is based on cad files linked as .stl models</p>
             <video width="100%" controls>
                 <source src="assets/images/second_test_simulation.webm" type="video/webm">
                 Your browser does not support the video tag.
